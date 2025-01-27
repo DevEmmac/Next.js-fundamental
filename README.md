@@ -39,3 +39,23 @@ Next.js is a framework for building fast and search-engine friendly applications
 * (Interpreter reads code and translates it line by line into what's known as machine code or byte code.)
 
 (Compiler catches type-related errors before the program runs, leading to more reliable code.)
+
+## Rendering Environments
+- `Client` web Browser
+- `Client-side  rendering`
+- Large bundles
+- Resource intensive
+- No SEO
+- Less secure
+- `Server` Node.js Runtime
+- `Server-side rendering`
+- Smaller bundles
+- Resource efficient
+- SEO
+- More Secure
+
+### Server Components cannot
+- Listen to browser events
+- Access Browser APIs
+- Maintain state
+- Use effects
