@@ -59,3 +59,11 @@ Next.js is a framework for building fast and search-engine friendly applications
 - Access Browser APIs
 - Maintain state
 - Use effects
+
+### Two ways to fetch Data
+- Client
+- Server
+
+### Static and Dynamic rendering
+- static rendering  or static side generation: Rendering at build time
+- Dynamic rendering: Rendering at request time
