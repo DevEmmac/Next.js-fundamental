@@ -15,17 +15,25 @@ const UsersPage = async () => {
     <>
       <h2>Users</h2>
       <p>{new Date().toLocaleTimeString()}</p>
-      <div>
-        {users.map(user => <ul key={user.id} className=''>
-          <li >{user.name}</li>
-          <li className='pl-10 bg-slate-400 w-fit'>{user.email}</li>
-          <li className='p-8'>{user.username}</li>
-          </ul>)}
-
-      </div>
+      <table className='table table-bordered'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+          <tbody>
+            {users.map(user => <tr key={user.id}>
+            <td>{user.name}</td>
+            <td className=''>{user.email}</td>
+            <td className=''>{user.username}</td>
+            </tr>)}
+          </tbody>
+      </table>
     </>
    
   )
-}
+} 
 
 export default UsersPage;
